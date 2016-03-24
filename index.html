@@ -1,0 +1,112 @@
+<html prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8">
+    
+    <meta name="title" content="UP TV">
+    <meta name="description" content="UP TV">
+    <meta name="author" content="upisfree">
+    <meta name="copyright" content="upisfree">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="UP TV">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="UP T V">
+    <meta property="og:image" content="assets/logo.jpg">
+    <meta property="og:image:width" content="1758">
+    <meta property="og:image:height" content="1758">
+    <meta property="og:url" content="http://upisfree.github.io/tv">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@upisfree">
+    
+    <!-- <meta property="vk:app_id" content="4952310"> -->
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-touch-icon-57x57.png?v=1">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-touch-icon-60x60.png?v=1">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-touch-icon-72x72.png?v=1">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-touch-icon-76x76.png?v=1">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-touch-icon-114x114.png?v=1">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-touch-icon-120x120.png?v=1">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-touch-icon-144x144.png?v=1">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-touch-icon-152x152.png?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon-180x180.png?v=1">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png?v=1" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/favicon/android-chrome-192x192.png?v=1" sizes="192x192">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png?v=1" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png?v=1" sizes="16x16">
+    <link rel="manifest" href="assets/favicon/manifest.json?v=1">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg?v=1" color="#030a02">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico?v=1">
+    <meta name="apple-mobile-web-app-title" content="UP T V">
+    <meta name="application-name" content="UP T V">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="assets/favicon/mstile-144x144.png?v=1">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml?v=1">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <title>UP TV</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800,700,600,400" rel="stylesheet" type="text/css">
+
+    <style>
+body
+{
+  margin: 0;
+  background: #000;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#video, #cover, #map
+{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+
+#video, #cover
+{
+  left: 0;
+  top: 0;
+}
+
+#video
+{
+  z-index: 1;
+}
+
+#cover
+{
+  z-index: 10;
+}
+
+#map
+{
+  left: 50%;
+  top: 0;
+}
+    </style>
+  </head>
+
+  <body>
+    <div id="video"></div>
+    <div id="cover"></div> <!-- no hover and clicks on video -->
+
+    <div id="map"></div>
+
+    <script src="http://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.js"></script>
+    <link href="http://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.css" rel="stylesheet">
+    <script src="http://youtube.com/iframe_api"></script>
+    <script src="./bin/road.js"></script>
+  </body>
+</html>
