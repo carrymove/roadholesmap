@@ -8,4 +8,4 @@ window.onYouTubeIframeAPIReady = ->
 
       setInterval ->
         player.playNext()
-      , 3000
+      , 5000
